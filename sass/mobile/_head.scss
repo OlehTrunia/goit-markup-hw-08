@@ -1,0 +1,21 @@
+header {
+    position: relative;
+    border-bottom: 2px solid black;
+  }
+  .header__body{
+    padding: 0 15px;
+  }
+  .header__navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .icon-menu{
+    fill: var(--svg-color);
+    background-color: transparent;
+  }
+  .menu-container{
+    @media screen and (max-width: 767px) {
+        display: none;
+      }
+  }
