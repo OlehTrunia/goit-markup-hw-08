@@ -10,7 +10,7 @@ header {
     align-items: center;
     justify-content: space-between;
   }
-  .icon-menu{
+  svg .icon-close{
     fill: var(--svg-color);
     background-color: transparent;
   }
@@ -19,3 +19,4 @@ header {
         display: none;
       }
   }
+ 
