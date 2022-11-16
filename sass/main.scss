@@ -1,18 +1,8 @@
 @import "./base/normalise";
 @import "./utilits/variables";
-// @import "./components/header";
-@import "./components/logo";
-// @import "./components/hero";
-// @import "./components/scills";
-// @import "./components/work";
-// @import "./components/specialists";
-// @import "./components/clients";
-// @import "./components/footer";
-// @import "./components/socials";
-// @import "./components/modal";
-// @import "./components/portfolio";
-// @import "./components/superhero__navigation";
-@import "./mobile/head";
+@import "./comps/container";
+@import "./comps/btn";
+
 
 *,
 *:before,
@@ -47,12 +37,12 @@ height: auto;
 address{
 font-style: normal;
 }
-button{
-display: block;
-cursor: pointer;
-border: none;
-border-radius: 4px;
-}
+// button{
+// display: block;
+// cursor: pointer;
+// border: none;
+// border-radius: 4px;
+// }
 .list{
 list-style: none;
 padding-left: 0;
@@ -66,8 +56,8 @@ color: inherit;
 color: var(--accent-color);
 }
 }
-.container {
-width: 1200px;
-margin: 0 auto;
-padding: 0 15px;
-}
+// .container {
+// width: 1200px;
+// margin: 0 auto;
+// padding: 0 15px;
+// }

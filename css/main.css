@@ -255,61 +255,12 @@ summary {
   --box-border: #EEEEEE;
 }
 
-a.logo {
-  display: block;
-  width: 145px;
-  height: 31px;
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
-}
-
-.logo__studio {
-  color: var(--studio-color);
-}
-
-header {
-  position: relative;
-  border-bottom: 2px solid black;
-}
-
-.header__body {
-  padding: 0 15px;
-}
-
-.header__navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-svg .icon-close {
-  fill: var(--svg-color);
-  background-color: transparent;
-}
-
-@media screen and (max-width: 767px) {
-  .menu-container {
-    display: none;
-  }
-}
-
-*,
+@imp *,
 *:before,
 *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-
 body {
   font-family: "Roboto", sans-serif;
   background-color: var(--title-text-color);
