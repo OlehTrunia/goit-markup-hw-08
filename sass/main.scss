@@ -1,7 +1,10 @@
 @import "./base/normalise";
 @import "./utilits/variables";
 @import "./comps/container";
-@import "./comps/btn";
+@import "./comps/header";
+@import "./comps/hero";
+@import "./comps/scills";
+
 
 
 *,
@@ -61,3 +64,14 @@ color: var(--accent-color);
 // margin: 0 auto;
 // padding: 0 15px;
 // }
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    }
