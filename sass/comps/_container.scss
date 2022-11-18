@@ -1,7 +1,9 @@
 .container {
-      min-width: 450px;
+      width: calc(100% - 30px);
 
       padding-left: 15px;
       padding-right: 15px;
+      margin: 0 auto;
+    
 }
   
