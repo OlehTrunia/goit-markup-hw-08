@@ -10,9 +10,8 @@
    align-items: center;
    @media (min-width: 768px) {
         width: 768px;
-         
-        }
-   @media (min-width: 1200px) {
+    }
+       @media (min-width: 1200px) {
         width: 1200px;  
         flex-direction: row;  
         align-items: flex-start;
@@ -125,6 +124,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     gap: 10px;
     font-weight: 700;
     font-size: 16px;
