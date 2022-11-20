@@ -10,6 +10,10 @@
    align-items: center;
    @media (min-width: 768px) {
         width: 768px;
+        @media (min-width: 768px)  {
+            flex-wrap: wrap;
+            justify-content: space-around;
+            }
     }
        @media (min-width: 1200px) {
         width: 1200px;  
@@ -23,6 +27,7 @@
     align-items: center;
     @media (min-width:1200px){
         display: block;
+        
     }
 }
 .footer__list{
