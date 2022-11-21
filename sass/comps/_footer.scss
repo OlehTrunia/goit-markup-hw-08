@@ -9,25 +9,33 @@
    flex-direction: column;
    align-items: center;
    @media (min-width: 768px) {
-        width: 768px;
+        width: 768px;}
         @media (min-width: 768px)  {
             flex-wrap: wrap;
-            justify-content: space-around;
             }
-    }
        @media (min-width: 1200px) {
         width: 1200px;  
         flex-direction: row;  
         align-items: flex-start;
         }
 }
+.footer__accounts{
+
+     @media (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+}
+}
 .footer__adress{
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media (min-width: 768px) {
+        margin-right: 165px;
+    }
     @media (min-width:1200px){
         display: block;
-        
+        margin-right: 0;  
     }
 }
 .footer__list{
@@ -67,6 +75,9 @@
     flex-direction: column;
     align-items: center; 
     margin-top: 60px;
+    @media (min-width: 768px) {
+        margin-top: 5px;
+    }
     @media screen and (min-width: 1200px){
     margin-top: 15px;
     margin-left: 70px;  
@@ -95,7 +106,7 @@
     margin-top: 60px;
     @media screen and (min-width: 1200px){
         align-items: flex-start;
-    margin-top: 23px;
+    margin-top: 12px;
     margin-left: auto;  
     }
     }

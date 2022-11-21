@@ -760,12 +760,10 @@ a.logo {
     width: 768px;
   }
 }
-@media (min-width: 768px) and (min-width: 768px) {
+@media (min-width: 768px) {
   .footer__body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
   }
 }
 @media (min-width: 1200px) {
@@ -781,6 +779,17 @@ a.logo {
   }
 }
 
+@media (min-width: 768px) {
+  .footer__accounts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .footer__adress {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -793,9 +802,15 @@ a.logo {
       -ms-flex-align: center;
           align-items: center;
 }
+@media (min-width: 768px) {
+  .footer__adress {
+    margin-right: 165px;
+  }
+}
 @media (min-width: 1200px) {
   .footer__adress {
     display: block;
+    margin-right: 0;
   }
 }
 
@@ -859,6 +874,11 @@ a.logo {
           align-items: center;
   margin-top: 60px;
 }
+@media (min-width: 768px) {
+  .footer__socials {
+    margin-top: 5px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer__socials {
     margin-top: 15px;
@@ -903,7 +923,7 @@ a.logo {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    margin-top: 23px;
+    margin-top: 12px;
     margin-left: auto;
   }
 }
@@ -1467,14 +1487,16 @@ textarea {
   background-color: var(--scills-text-color);
   outline: none;
   border-radius: 4px;
+  border-color: var(--scills-text-color);
   padding: 6px 22px;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navigation__btn:hover, .navigation__btn:focus {
   background-color: var(--accent-color);
+  border-color: var(--accent-color);
   color: var(--title-text-color);
   outline: none;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
