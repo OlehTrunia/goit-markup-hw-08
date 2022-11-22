@@ -296,6 +296,10 @@ summary {
   border: none;
 }
 
+.menu__close .menu__icon {
+  fill: black;
+}
+
 .menu__navigation {
   margin-top: 48px;
   margin-left: 25px;
@@ -346,9 +350,6 @@ summary {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .menu__socials__item {
@@ -360,12 +361,15 @@ summary {
   color: #2196F3;
 }
 
+.menu__socials__item:not(:last-child) {
+  margin-right: 20px;
+}
 .menu__socials__item:not(:last-child)::after {
   content: "";
   position: absolute;
   width: 22px;
   top: 11px;
-  left: 85px;
+  left: 80px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);

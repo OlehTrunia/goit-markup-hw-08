@@ -15,6 +15,10 @@
     // background-color: transparent;
     border: none;
 }
+.menu__close .menu__icon{
+    fill: black;
+}
+
 .menu__navigation {
     margin-top: 48px;
     margin-left: 25px;
@@ -57,7 +61,6 @@ padding-bottom: 32px;
 }
 .menu__socials__list{
     display: flex;
-    justify-content: space-between;
 }
 
 .menu__socials__item{
@@ -69,16 +72,14 @@ position: relative;
 color: #2196F3;
 }
 .menu__socials__item:not(:last-child){
-    // margin-right: 20px;
-    
+    margin-right: 20px;
     &::after{
         content: "";
         position: absolute;
         width: 22px;
-top: 11px;
-left: 85px;
-
-border: 1px solid rgba(33, 33, 33, 0.2);
-transform: rotate(90deg);
-    }
+        top: 11px;
+        left: 80px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        transform: rotate(90deg);
+    }      
 }
