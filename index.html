@@ -30,6 +30,25 @@
                     <use href="./images/icons.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a></li>
                 </ul> 
             </div>
+            <button type="button" class="menu-open" data-menu-open><svg class="header__icon" width="40" height="40"><use href="./images/icons.svg#menu"></use>
+            </svg></button>
+            <div class="menu is-hidden" data-menu> 
+                <div class="menu__body container">
+                    <button type="button" class="menu__close" data-menu-close><svg class="header__icon" width="40" height="40"><use href="./images/icons.svg#cross"></use></svg></button>
+                    <div class="menu__navigation">
+                    <ul class="menu__navigation__list list">
+                    <li class="menu__navigation__item"><a class="link current" href="./index.html">Студія</a></li>
+                    <li class="menu__navigation__item"><a class="link" href="./portfolio.html">Портфоліо</a></li>
+                    <li class="menu__navigation__item"><a class="link" href="./index.html">Контакти</a></li>
+                    </ul>
+                </div>
+                <div  class="menu__referents">
+                    <ul class="menu__referents__list list">
+                        <li class="menu__referents__item"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li class="menu__referents__item"><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    </ul> 
+                </div>
+                </div></div>
         </div>
     </header>
 <main>
@@ -107,11 +126,14 @@
         <div class="container work__body">
             <h2 class="work__title">Чим ми займаємося</h2>   
             <ul class="work__list list">
-              <li class="work__item"><div class="work__box"><img src="./images/box1.jpg" alt="розмітка майбутніх ресурсів" width="370">
-              <p class="work__label">Десктопні додатки</p></div></li>
-              <li class="work__item"><div class="work__box"><img src="./images/box2.jpg" alt="розробка зручних застосунків" width="370">
-              <p class="work__label">Мобільні додатки</p></div></li>
-              <li class="work__item"><div class="work__box"><img src="./images/box3.jpg" alt="створення застосунків для переносних пристроїв" width="370">
+              <li class="work__item"><div class="work__box"><picture>
+                <sourse srcset="./images/box1.jpg 1x, ./images/box1-2x.jpg 2x" media="(min-width: 1200px)"/><img src="./images/box1.jpg" alt="розмітка майбутніх ресурсів" width="100%"></picture>
+                <p class="work__label">Десктопні додатки</p></div></li>
+              <li class="work__item"><div class="work__box"><picture>
+                <sourse srcset="./images/box2.jpg 1x, ./images/box2-2x.jpg 2x" media="(min-width: 1200px)"/><img src="./images/box1.jpg" alt="розробка зручних застосунків" width="100%"></picture>
+                <p class="work__label">Мобільні додатки</p></div></li>
+              <li class="work__item"><div class="work__box"><picture>
+                <sourse srcset="./images/box3.jpg 1x, ./images/box3-2x.jpg 2x" media="(min-width: 1200px)"/><img src="./images/box1.jpg" alt="створення застосунків для переносних пристроїв" width="100%"></picture>
               <p class="work__label">Дизайнерські рішення</p></div></li>
             </ul>
         </div>
@@ -354,7 +376,7 @@
         </div>
     </div>
 </footer>
-<script defer src="js/mobile-menu.js"></script>    
+<script defer src="./js/mobile-menu.js"></script>    
 <script src="./js/modal.js"></script>
 </body>
 </html>

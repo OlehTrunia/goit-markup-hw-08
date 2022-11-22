@@ -1,0 +1,16 @@
+
+.header__body{
+display: flex;
+justify-content: space-evenly;
+}
+.header__navigation{
+    display: none;
+}
+.header__referents{
+    display: none;
+}
+
+.header__icon{
+    background-color: var(title-text-color);
+    fill: black;
+}

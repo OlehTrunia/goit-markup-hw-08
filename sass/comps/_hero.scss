@@ -3,11 +3,21 @@
     url("../../images/hero/studiobg-mob.jpg");
     background-size: cover;
     background-repeat: no-repeat;  
-    @media (min-width: 768px) {
-        background-image: var(--gradient), url(../../images/hero/studiobg-tablet.jpg);     
+    @include retina{
+    background-image: var(--gradient),
+    url("../../images/hero/studiobg-mob-2x.jpg");
+  }
+    @include tablet {
+        background-image: var(--gradient), url(../../images/hero/studiobg-tablet.jpg);  
+        @include retina{
+            background-image: var(--gradient), url(../../images/hero/studiobg-tablet-2x.jpg);
+        }   
     }
-    @media (min-width: 1200px) {
+    @include desktop {
         background-image: var(--gradient), url(../../images/hero/studiobg.jpg);
+        @include retina{
+            background-image: var(--gradient), url(../../images/hero/studiobg-2x.jpg);  
+        }
     }
 }
 .hero .container{

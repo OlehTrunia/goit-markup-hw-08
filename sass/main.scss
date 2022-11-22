@@ -1,6 +1,8 @@
 @import "./base/normalise";
 @import "./utilits/variables";
+@import "./utilits/mixins";
 @import "./comps/container";
+@import "./comps/mobile-menu";
 @import "./comps/header";
 @import "./comps/logo";
 @import "./comps/hero";
