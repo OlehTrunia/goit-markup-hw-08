@@ -1315,6 +1315,10 @@ a.logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -1334,14 +1338,12 @@ a.logo {
   padding-bottom: 20px;
 }
 
-.subscription__field {
-  max-width: 450px;
-}
 @media (min-width: 1200px) {
   .subscription__field {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    max-width: 358px;
   }
 }
 
@@ -1361,6 +1363,11 @@ a.logo {
   .subscription__field input {
     width: 100%;
     max-width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscription__field input {
+    width: 358px;
   }
 }
 

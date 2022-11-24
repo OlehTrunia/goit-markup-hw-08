@@ -103,6 +103,7 @@ width: 768px;
     margin-top: 60px;
     @media screen and (min-width: 1200px){
         display: flex;
+        flex-direction: column;
         align-items: flex-start;
     margin-top: 12px;
     margin-left: auto;  
@@ -119,9 +120,9 @@ width: 768px;
     padding-bottom: 20px;
     }
     .subscription__field {
-        max-width: 450px;
         @media (min-width: 1200px) {
         display: flex;  
+        max-width: 358px;
         }
     }
     .subscription__field input{
@@ -137,6 +138,9 @@ width: 768px;
     @media (max-width: 1199px) {
         width: 100%;
         max-width: 450px; 
+    }
+    @include desktop{
+        width: 358px;
     }
     }
     .subscription__button {
