@@ -1303,7 +1303,7 @@ a.logo {
   border-radius: 50%;
 }
 
-.socials__list .socials__icon {
+.socials__list svg.socials__icon {
   fill: var(--title-text-color);
 }
 
@@ -1343,7 +1343,9 @@ a.logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    max-width: 358px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -1359,13 +1361,13 @@ a.logo {
   font-size: small;
   padding-left: 16px;
 }
-@media (max-width: 1199px) {
+@media (max-width: 767px) {
   .subscription__field input {
     width: 100%;
     max-width: 450px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media (min-width: 768px) {
   .subscription__field input {
     width: 358px;
   }
