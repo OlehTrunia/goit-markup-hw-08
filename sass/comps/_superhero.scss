@@ -1,3 +1,6 @@
+.superhero{
+    border-top: 1px solid var(--head-border);    
+}
 .superhero__body{
     display: flex;
     flex-direction: column;
@@ -15,7 +18,7 @@
     }
 }
 .header{
-    border-bottom: 1px solid var(--head-border);
+    
     }
     .superhero__list{
     display: flex;

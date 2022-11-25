@@ -18,15 +18,19 @@ padding-bottom: 60px;
 }
 }
 .scills__item{
-    width: 100%;
-    max-width: 450px;
-     @media (min-width: 768px){
-        width: calc((100% - 30px) / 2);       
-    }
-    @media (min-width: 1200px){
-        width: calc((100% - 90px) / 4);
-    }
+width: 100%;
+max-width: 450px;
+@media (min-width: 768px){
+    width: calc((100% - 30px) / 2);       
 }
+@media (min-width: 1200px){
+    width: calc((100% - 90px) / 4);
+}
+&:not(:last-child){
+    @media (max-width: 767px){
+        margin-bottom: 30px;
+}
+}}
 .scills__text {
 height: 50px;
 font-size: 14px;
