@@ -151,16 +151,13 @@
         <div class="container work__body">
             <h2 class="work__title">Чим ми займаємося</h2>   
             <ul class="work__list list">
-              <li class="work__item"><div class="work__box"><picture>
-                <sourse srcset="./images/box1.jpg 1x, ./images/box1-2x.jpg 2x" media="(min-width: 1200px)" /><img src="./images/box1.jpg" alt="розмітка майбутніх ресурсів" width="100%" /></picture>
+                <li class="work__item"><div class="work__box">
+                <img src="./images/work/box1.jpg" alt="розмітка майбутніх ресурсів" width="370" />
                 <p class="work__label">Десктопні додатки</p></div></li>
-              <li class="work__item"><div class="work__box"><picture>
-                <sourse srcset="./images/box2.jpg 1x, ./images/box2-2x.jpg 2x" media="(min-width: 1200px)"/><img src="./images/box2.jpg" alt="розробка зручних застосунків" width="100%" /></picture>
+                <li class="work__item"><div class="work__box"><img src="./images/work/box2.jpg" alt="розробка зручних застосунків" width="370">
                 <p class="work__label">Мобільні додатки</p></div></li>
-              <li class="work__item"><div class="work__box"><picture>
-                <sourse srcset="./images/box3.jpg 1x, ./images/box3-2x.jpg 2x" media="(min-width: 1200px)"/><img src="./images/box3.jpg" alt="створення застосунків для переносних пристроїв" width="100%" /></picture>
-              <p class="work__label">Дизайнерські рішення</p></div></li>
-            </ul>
+                <li class="work__item"><div class="work__box"><img src="./images/work/box3.jpg" alt="створення застосунків для переносних пристроїв" width="370">
+                <p class="work__label">Дизайнерські рішення</p></div></li>
         </div>
     </section>
     <section class="specialists">
@@ -169,25 +166,25 @@
             <ul class="specialists__list list">
                 <li class="specialists__item">
                     <picture>
-                    <sourse 
+                    <source 
+                    media="(min-width: 1200px)"
                     srcset="
                     ./images/specialists/img.jpg 1x,
                     ./images/specialists/img-2x.jpg 2x"
-                    media="(min-width: 1200px)"
-                    type="image/jpg" />
-                    <sourse 
+                    />
+                    <source 
+                    media="(min-width: 768px)"
                     srcset="
                     ./images/specialists/img-tab.jpg 1x,
                     ./images/specialists/img-tab-2x.jpg 2x"
-                    media="(min-width: 768px)"
-                    type="image/jpg" />
-                    <sourse
+                    />
+                    <source
+                    media="(max-width: 767px)" 
                     srcset="
                     ./images/specialists/img-mob.jpg 1x,
                     ./images/specialists/img-mob-2x.jpg 2x"
-                    media="(max-width: 767px)"
-                    type="image/jpg" />
-                    <img src="./images/specialists/img.jpg" alt="граіфчний дизайнер" width="100%" /></picture>
+                     />
+                    <img src="./images/specialists/img.jpg" alt="граіфчний дизайнер" width="450px" /></picture>
                     <div class="specialists__info">
                     <h3 class="specialists__name">Ігор Дем'яненко</h3>
                     <p class="specialists__directions">Product Designer</p>
@@ -210,22 +207,30 @@
                             <use href="./images/icons.svg#icon-linkedin"></use></svg></a></li>
                     </ul>
                   </div></li>
-                <li class="specialists__item"><picture>
-                    <sourse 
-                    srcset="
-                    ./images/specialists/img(1).jpg 1x,
-                    ./images/specialists/img(1)-2x.jpg 2x"
-                    media="(min-width: 1200px)"/>
-                    <sourse 
-                    srcset="
-                    ./images/specialists/img(1)-tab.jpg 1x,
-                    ./images/specialists/img(1)-tab-2x.jpg 2x"
-                    media="(min-width: 768px)"/>
-                    <sourse
-                    srcset="
-                    ./images/specialists/img(1)-mob.jpg 1x,
-                    ./images/specialists/img(1)-mob-2x.jpg 2x"
-                    media="(min-width: 480px)"/><img src="./images/specialists/img(1).jpg" alt="граіфчний дизайнер" width="100%"></picture>
+                <li class="specialists__item">
+                    <picture>
+                        <source 
+                        media="(min-width: 1200px)"
+                        srcset="
+                        ./images/specialists/img(1).jpg 1x,
+                        ./images/specialists/img(1)-2x.jpg 2x
+                        "
+                        />
+                        <source 
+                        media="(min-width: 768px)"
+                        srcset="
+                        ./images/specialists/img(1)-tab.jpg 1x,
+                        ./images/specialists/img(1)-tab-2x.jpg 2x
+                        "
+                        />
+                        <source
+                        media="(max-width: 767px)" 
+                        srcset="
+                        ./images/specialists/img(1)-mob.jpg 1x,
+                        ./images/specialists/img(1)-mob-2x.jpg 2x
+                        "
+                        />
+                    <img src="./images/specialists/img(1).jpg" alt="граіфчний дизайнер" width="450px" /></picture>
                     <div class="specialists__info">
                         <h3 class="specialists__name">Ольга Рєпіна</h3>
                         <p class="specialists__directions">Frontend Developer</p>
@@ -248,22 +253,23 @@
                               <use href="./images/icons.svg#icon-linkedin"></use></svg></a></li>
                       </ul>
                     </div></li>
-                <li class="specialists__item"><picture>
-                    <sourse 
+                <li class="specialists__item">
+                    <picture>
+                    <source 
                     srcset="
                     ./images/specialists/img(2).jpg 1x,
                     ./images/specialists/img(2)-2x.jpg 2x"
                     media="(min-width: 1200px)"/>
-                    <sourse 
+                    <source 
                     srcset="
                     ./images/specialists/img(2)-tab.jpg 1x,
                     ./images/specialists/img(2)-tab-2x.jpg 2x"
                     media="(min-width: 768px)"/>
-                    <sourse
+                    <source
                     srcset="
                     ./images/specialists/img(2)-mob.jpg 1x,
                     ./images/specialists/img(2)-mob-2x.jpg 2x"
-                    media="(min-width: 480px)"/><img src="./images/specialists/img(2).jpg" alt="граіфчний дизайнер" width="100%"></picture>
+                    media="(min-width: 480px)"/><img src="./images/specialists/img(2).jpg" alt="граіфчний дизайнер" width="450px" /></picture>
                     <div class="specialists__info">
                         <h3 class="specialists__name">Микола Тарасов</h3>
                         <p class="specialists__directions">Marketing</p>
@@ -287,21 +293,21 @@
                       </ul>
                     </div></li>
                 <li class="specialists__item"><picture>
-                    <sourse 
+                    <source 
                     srcset="
                     ./images/specialists/img(3).jpg 1x,
                     ./images/specialists/img(3)-2x.jpg 2x"
                     media="(min-width: 1200px)"/>
-                    <sourse 
+                    <source 
                     srcset="
                     ./images/specialists/img(3)-tab.jpg 1x,
                     ./images/specialists/img(3)-tab-2x.jpg 2x"
                     media="(min-width: 768px)"/>
-                    <sourse
+                    <source
                     srcset="
                     ./images/specialists/img(3)-mob.jpg 1x,
                     ./images/specialists/img(3)-mob-2x.jpg 2x"
-                    media="(min-width: 480px)"/><img src="./images/specialists/img(3).jpg" alt="граіфчний дизайнер" width="100%"></picture>
+                    media="(min-width: 480px)"/><img src="./images/specialists/img(3).jpg" alt="граіфчний дизайнер" width="450px" /></picture>
                     <div class="specialists__info">
                         <h3 class="specialists__name">Михайло Єрмаков</h3>
                         <p class="specialists__directions">UI Designer</p>

@@ -674,7 +674,7 @@ a.logo {
 }
 
 .hero {
-  background-image: var(--gradient), url("../../images/hero/studiobg-mob.jpg");
+  background-image: var(--gradient), url("../images/hero/studiobg-mob.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
