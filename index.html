@@ -168,22 +168,27 @@
         <div class="container specialists__body">
             <h2 class="specialists__title">Наша команда</h2>
             <ul class="specialists__list list">
-                <li class="specialists__item"><picture>
+                <li class="specialists__item">
+                    <picture>
                     <sourse 
                     srcset="
                     ./images/specialists/img.jpg 1x,
                     ./images/specialists/img-2x.jpg 2x"
-                    media="(min-width: 1200px)"/>
+                    media="(min-width: 1200px)"
+                    type="image/jpg"/>
                     <sourse 
                     srcset="
                     ./images/specialists/img-tab.jpg 1x,
                     ./images/specialists/img-tab-2x.jpg 2x"
-                    media="(min-width: 768px)"/>
+                    media="(min-width: 768px)"
+                    type="image/jpg"/>
                     <sourse
                     srcset="
                     ./images/specialists/img-mob.jpg 1x,
                     ./images/specialists/img-mob-2x.jpg 2x"
-                    media="(min-width: 480px)"/><img src="./images/specialists/img.jpg" alt="граіфчний дизайнер" width="100%"></picture>
+                    media="(max-width: 767px)"
+                    type="image/jpg"/>
+                    <img src="./images/specialists/img.jpg" alt="граіфчний дизайнер" width="100%"></picture>
                     <div class="specialists__info">
                     <h3 class="specialists__name">Ігор Дем'яненко</h3>
                     <p class="specialists__directions">Product Designer</p>
